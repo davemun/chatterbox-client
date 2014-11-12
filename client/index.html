@@ -1,0 +1,89 @@
+<!doctype html>
+<html
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- dependencies -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- your scripts -->
+    <script src="env/config.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+  <body>
+    <div class="logo"><img src="../res/chatterBox-logo.png"></img></div>
+    <div id="main">
+
+      <div class="container">
+        <div class="row clearfix">
+          
+          <div class="col-md-4 column" id='send'>
+            <form role="form" class='submit'>
+              <div class="form-group">
+                <input type="text" class="form-control text" placeholder="Message">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control roomname" placeholder="Room Name">
+              </div>
+              <div class="form-group">
+                <div class="center">
+                  <button type="submit" class="btn btn-default">Send</button>
+                </div>
+              </div>
+            </form>
+            </br>
+            <a class="btn btn-primary btn-large" id="retrieveMessages">Refresh Messages</a>
+            </br>
+            <div class="panel-group" id="panel-friendsList">
+            </br>
+              <div class="panel panel-primary" id="panel-friends-template">
+                <div class="panel-heading">
+                   <a class="panel-title collapsed" id="panel-friends-title" data-toggle="collapse" data-parent="#panel-friendsList" href="#panel-friendsDisplay">Friends List</a>
+                   
+                </div>
+
+
+                <div id="panel-friendsDisplay" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    
+
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="col-md-8 column">
+            <div class="panel-group" id="panel-380907">
+
+              <div class="panel panel-default" id="panel-template">
+                <div class="panel-heading">
+                   <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-380907" href="#panel-element-697761">Rooms</a>
+                </div>
+                <div id="panel-element-697761" class="panel-collapse collapse">
+                  <div class="panel-body"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+

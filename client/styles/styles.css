@@ -1,0 +1,8 @@
+#panel-template { display: none; }
+.friend { font-weight: bold; }
+.logo { text-align:center;}
+
+.panel-title {
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  display: block;
+}
